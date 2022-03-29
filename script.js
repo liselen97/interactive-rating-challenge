@@ -1,9 +1,20 @@
 $(initialization);
 
-function initialization(){
-    $(".rating div").on("click", chooseRating)
-}
+function initialization() {
+    var ratingNumber = null;
 
-function chooseRating(){
-    
+    $(".rating div").on("click", function () {
+        $(".rating div").removeClass("ratingSelected");
+        $(this).addClass("ratingSelected");
+
+        ratingNumber = $(this).text();
+    });
+
+    $("button").on("click", function () {
+        if (ratingNumber != null) {
+            $("h3 span").text(ratingNumber);
+            $("#screen1").hide();
+            $("#screen2").show();
+        }
+    })
 }

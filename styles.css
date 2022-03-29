@@ -13,7 +13,7 @@ body{
     font-family: Overpass;
     font-size: 15px;
 }
-img{margin-bottom:1em;
+#starIcon{margin-bottom:1em;
     background:hsl(215, 15%, 22%);
     padding: 1em;
     border-radius: 40px;
@@ -32,6 +32,8 @@ img{margin-bottom:1em;
     padding: 2.5em;
     background: hsl(213, 19%, 18%); 
     border-radius:20px;
+    margin: 20px;
+    
 }
 
 .rating{width: 100%; 
@@ -54,6 +56,11 @@ img{margin-bottom:1em;
 .rating div:hover{
     background:hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%)
+}
+
+.ratingSelected{
+    background:hsl(217, 12%, 63%) !important;
+    color: hsl(0, 0%, 100%) !important;
 }
 .exception{margin-right: 0 !important;}
 
@@ -82,6 +89,29 @@ button:hover{
     background: hsl(0, 0%, 100%);
     color:hsl(25, 97%, 53%);
     transition: all 0.3s;
+}
+
+#screen2{
+    display: none;
+    text-align: center;
+}
+
+#screen2 h3{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: hsl(25, 97%, 53%);
+    background: #7c879842;
+    padding: 5px 15px;
+    font-weight: normal;
+    border-radius: 40px; 
+    font-size: 15px; 
+    /* block-size:fit-content ; */
+    width: fit-content;
+    display: inline-block;
+}
+
+#screen2 img{
+    width: 60%;
 }
 
 
