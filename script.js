@@ -18,10 +18,10 @@ function initialization() {
                 type: "POST",
                 url: "https://subteweb.gatsbyjs.io/api/challenge",
                 data: {
-                  "rating": ratingNumber,
+                    "rating": ratingNumber,
                 },
                 success: function (response) {
-                    
+
                     console.log(response);
                 },
                 dataType: "json"
@@ -30,7 +30,7 @@ function initialization() {
             $("#screen1").hide();
             $("#screen2").show();
 
-           
+
         }
     })
 }
